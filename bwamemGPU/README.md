@@ -162,17 +162,17 @@ Vasimuddin Md, Sanchit Misra, Heng Li, Srinivas Aluru.
 ## bwamem + GPU(SALoBa and GASAL2)
 You can use the same way you use bwamem.
 But you should check below lines.
-0. Compile SALoBa_emulate_BWAMEM2 with your GPU architecture.
-1. You should set gpu_nthreads same with number of thread in src/bandedSWA.h 344 line
+1. Compile SALoBa_emulate_BWAMEM2 with your GPU architecture.
+2. You should set gpu_nthreads same with number of thread in src/bandedSWA.h 344 line</br>
 Ex. thread = 20 ---> gpu_nthreads = 20
-2. You can choose alignment version at src/bandedSWA.cpp "#define SELECT".</br>
+3. You can choose alignment version at src/bandedSWA.cpp "#define SELECT".</br>
 0:Vanila(32 subwarp)</br>
 1:Kband(32 subwarp)</br>
 2:Kband + early(32 subwarp)</br>
 3:Kband + early + Zdrop(8 subwarp)</br>
 4:Kband + early + Zdrop(16 subwarp)</br>
 5:Kband + early + Zdrop(32 subwarp)</br>
-3. In exe.sh, set refer address of your reference sequence file worked by bwa-mem2.
-4. set readN address of your read sequnce file
-5. Then excute exe.sh file
-6. The usage of remainders is the same as the usage of bwa-mem2
+4. In exe.sh, set refer address of your reference sequence file worked by bwa-mem2.
+5. set readN address of your read sequnce file
+6. Then excute exe.sh file
+7. The usage of remainders is the same as the usage of bwa-mem2
