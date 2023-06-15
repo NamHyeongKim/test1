@@ -230,10 +230,10 @@ For any issues and suugestions contact Nauman Ahmed at nahmed@uet.edu.pk.
 ## SALoBa emulating BWA-MEM2
 You can use SALoBa emulating BWA-MEM2 the same way you use GASAL2.
 You can choose version at "gasal_aln_async(...., int selecting)"
-selecting
-0:Vanila(32 subwarp)
-1:Kband(32 subwarp)
-2:Kband + early(32 subwarp)
-3:Kband + early + Zdrop(8 subwarp)
-4:Kband + early + Zdrop(16 subwarp)
-5:Kband + early + Zdrop(32 subwarp)
+selecting</br>
+0:Vanila(32 subwarp)</br>
+1:Kband(32 subwarp)</br>
+2:Kband + early(32 subwarp)</br>
+3:Kband + early + Zdrop(8 subwarp)</br>
+4:Kband + early + Zdrop(16 subwarp)</br>
+5:Kband + early + Zdrop(32 subwarp)</br>

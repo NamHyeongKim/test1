@@ -162,6 +162,7 @@ Vasimuddin Md, Sanchit Misra, Heng Li, Srinivas Aluru.
 ## bwamem + GPU(SALoBa and GASAL2)
 You can use the same way you use bwamem.
 But you should check below lines.
+0. Compile SALoBa_emulate_BWAMEM2 with your GPU architecture.
 1. You should set gpu_nthreads same with number of thread in src/bandedSWA.h 344 line
 Ex. thread = 20 ---> gpu_nthreads = 20
 2. You can choose alignment version at src/bandedSWA.cpp "#define SELECT".</br>
