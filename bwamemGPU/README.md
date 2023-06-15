@@ -164,13 +164,13 @@ You can use the same way you use bwamem.
 But you should check below lines.
 1. You should set gpu_nthreads same with number of thread in src/bandedSWA.h 344 line
 Ex. thread = 20 ---> gpu_nthreads = 20
-2. You can choose alignment version at src/bandedSWA.cpp "#define SELECT".
-0:Vanila(32 subwarp)
-1:Kband(32 subwarp)
-2:Kband + early(32 subwarp)
-3:Kband + early + Zdrop(8 subwarp)
-4:Kband + early + Zdrop(16 subwarp)
-5:Kband + early + Zdrop(32 subwarp)
+2. You can choose alignment version at src/bandedSWA.cpp "#define SELECT".</br>
+0:Vanila(32 subwarp)</br>
+1:Kband(32 subwarp)</br>
+2:Kband + early(32 subwarp)</br>
+3:Kband + early + Zdrop(8 subwarp)</br>
+4:Kband + early + Zdrop(16 subwarp)</br>
+5:Kband + early + Zdrop(32 subwarp)</br>
 3. In exe.sh, set refer address of your reference sequence file worked by bwa-mem2.
 4. set readN address of your read sequnce file
 5. Then excute exe.sh file
